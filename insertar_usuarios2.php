@@ -59,7 +59,7 @@
             
             $mensaje_cifrado = cifrar($mensaje_cifrar, $llave); //Llama la función para cifrar la información
             
-            $mensaje_descifrado = descifrar($mensaje_cifrado, $llave); //Lama la función para descifrar la información
+            $mensaje_descifrado = descifrar($mensaje_cifrado, $llave); //Llama la función para descifrar la información
             
             //encriptar contraseña
             $contraseña = ( $mensaje_cifrado);
