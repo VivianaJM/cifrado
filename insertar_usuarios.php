@@ -75,8 +75,6 @@
             $contraseña = ( $datos_cifrados);
             echo "<input type='password' id='contra1' name='contra1' required>";
             $contraseña1 =($datos_descifrados);
-
-
                
         }
             //agregar registros a la bd
