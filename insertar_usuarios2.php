@@ -66,8 +66,6 @@
 
             echo "<input type='password' id='contra1' name='contra1' required>";
             $contraseña1 =($mensaje_descifrado);
-
-
                
         }
             //agregar registros a la bd
