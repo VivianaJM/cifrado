@@ -23,6 +23,12 @@
             <li class="nav-item">
             <a class="nav-link active fs-4 " aria-current="page" href="formulario.view.php">Cifrado asimétrico RSA</a>
             </li>
+            <li class="nav-item">
+            <a class="nav-link active fs-4 " aria-current="page" href="formulariohash1.view.php">Cifrado hash v1</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link active fs-4 " aria-current="page" href="formulariohash2.view.php">Cifrado hash v2</a>
+            </li>
             </ul><br><br><br>
             </div>
         </div>
@@ -61,7 +67,7 @@
 
                 <div class="form-check">
                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                <a class="form-check-label" for="flexCheckDefault" href="#">
+                <a class="form-check-label" for="flexCheckDefault" href="../avisopriv.html">
                     Aviso de privacidad
                 </a>
                 </div>

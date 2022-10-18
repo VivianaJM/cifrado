@@ -18,7 +18,7 @@
             <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-            <a class="nav-link active fs-4 " aria-current="page" href="formulario2.view.php">Cifrado simétrico AES</a>
+            <a class="nav-link active fs-4 " aria-current="page" href="insertarusuario_hash1.php">Cifrado simétrico AES</a>
             </li>
             <li class="nav-item">
             <a class="nav-link active fs-4 " aria-current="page" href="formulario.view.php">Cifrado asimétrico RSA</a>
@@ -33,11 +33,11 @@
             </div>
         </div>
         </nav>
-        <h4 class="h1 text-center text-success">Cifrad hash v1</h4><br>
+        <h4 class="h1 text-center text-success">Cifrado hash v1</h4><br>
 
         <div class="container fluid justify-content-center">            
 
-            <form class="col-7 p-0 shadow-sm container fluid justify-content-center" action="../insertar_usuarios2.php" method="POST">
+            <form class="col-7 p-0 shadow-sm container fluid justify-content-center" action="../insertarusuario_hash1.php" method="POST">
                 <div class="row m-0 px-5">
                     <div class="col-12 p-0 mb-4  text-center">
                         <h3 class="h1">Registrarse</h3>
@@ -94,13 +94,12 @@
                 <th scope="col">Usuario</th>
                 <th scope="col">Email</th>
                 <th scope="col">Teléfono</th>
-                <th scope="col">Contraseña cifrada AES</th>
-                <th scope="col">Contraseña descifrada</th>
+                <th scope="col">Contraseña cifrada hash v1</th>
                 </tr>
             </thead>
             <tbody>
                 <?php 
-                $sql="SELECT * FROM usuarios2";
+                $sql="SELECT * FROM usuarioshash1";
                 $result=mysqli_query($conexion, $sql);
                 
                 while($mostrar=mysqli_fetch_array($result)){
@@ -111,8 +110,7 @@
                 <td><?php echo $mostrar['usuario']?></td>
                 <td><?php echo $mostrar['email']?></td>
                 <td><?php echo $mostrar['telefono']?></td>
-                <td><?php echo $mostrar['contra_cif_aes']?></td>
-                <td><?php echo $mostrar['contra_descifrada']?></td>
+                <td><?php echo $mostrar['contra_cif_hash1']?></td>
                 </tr>
             </tbody>
             <?php
