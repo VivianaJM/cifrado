@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 18-10-2022 a las 05:39:50
+-- Tiempo de generación: 25-10-2022 a las 17:53:04
 -- Versión del servidor: 10.4.22-MariaDB
 -- Versión de PHP: 8.0.13
 
@@ -73,6 +73,29 @@ INSERT INTO `usuarios2` (`id`, `nombre`, `usuario`, `email`, `telefono`, `contra
 -- --------------------------------------------------------
 
 --
+-- Estructura de tabla para la tabla `usuarioscpropio`
+--
+
+CREATE TABLE `usuarioscpropio` (
+  `id` int(11) NOT NULL,
+  `nombre` varchar(255) NOT NULL,
+  `usuario` varchar(20) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `telefono` varchar(100) NOT NULL,
+  `contra` varchar(100) NOT NULL,
+  `contra_cif_propio` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `usuarioscpropio`
+--
+
+INSERT INTO `usuarioscpropio` (`id`, `nombre`, `usuario`, `email`, `telefono`, `contra`, `contra_cif_propio`) VALUES
+(9, 'Liliana Lopez Cabrera', 'lili', 'liliana@gmail.com', '1234567890', '123Liliana.Cab', 'b1a2C3.Lainlai');
+
+-- --------------------------------------------------------
+
+--
 -- Estructura de tabla para la tabla `usuarioshash1`
 --
 
@@ -133,6 +156,12 @@ ALTER TABLE `usuarios2`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indices de la tabla `usuarioscpropio`
+--
+ALTER TABLE `usuarioscpropio`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indices de la tabla `usuarioshash1`
 --
 ALTER TABLE `usuarioshash1`
@@ -158,6 +187,12 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT de la tabla `usuarios2`
 --
 ALTER TABLE `usuarios2`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+
+--
+-- AUTO_INCREMENT de la tabla `usuarioscpropio`
+--
+ALTER TABLE `usuarioscpropio`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
