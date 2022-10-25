@@ -18,6 +18,12 @@
             <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
+            <a class="nav-link active fs-4 " aria-current="page" href="insertarusuario_hash1.php">Cifrado simétrico AES</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link active fs-4 " aria-current="page" href="formulario.view.php">Cifrado asimétrico RSA</a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link active fs-4 " aria-current="page" href="formulariohash1.view.php">Cifrado hash v1</a>
             </li>
             <li class="nav-item">
